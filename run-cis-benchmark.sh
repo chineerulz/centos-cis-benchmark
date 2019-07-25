@@ -122,7 +122,6 @@ test_wrapper 1.1.16 "Ensure nosuid option set on /dev/shm partition (Scored)" Ye
 test_wrapper 1.1.17 "Ensure noexec option set on /dev/shm partition (Scored)" Yes Server1 Workstation1
 test_wrapper 1.1.18 "Ensure nodev option set on removable media partitions (Not Scored)" No Server1 Workstation1
 test_wrapper 1.1.19 "Ensure nosuid option set on removable media partitions (Not Scored)" No Server1 Workstation1
-test_wrapper 1.1.20 "Ensure noexec option set on removable media partitions (Not Scored)" No Server1 Workstation1
 test_wrapper 1.1.21 "Ensure sticky bit is set on all world-writable directories (Scored)" Yes Server1 Workstation1
 test_wrapper 1.1.22 "Disable Automounting (Scored)" Yes Server1 Workstation2
 test_wrapper 1.2.1 "Ensure package manager repositories are configured (Not Scored)" No Server1 Workstation1

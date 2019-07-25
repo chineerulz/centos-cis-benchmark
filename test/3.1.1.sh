@@ -4,8 +4,8 @@
 # 3.1.1 - Ensure IP forwarding is disabled (Scored)
 
 sysctl net.ipv4.ip_forward | grep -E "net.ipv4.ip_forward = 0"
-if [[ $? == 0 ]]; then
-        exit 0
+if [[ $? == 1 ]]; then
+        exit 1
 fi
 
 if [[ $(ls -A /etc/sysctl.d/) ]] ; then
