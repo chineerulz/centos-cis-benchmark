@@ -1,6 +1,6 @@
 #!/bin/sh
 # ** AUTO GENERATED **
 
-# 3.5.3 - Ensure RDS is disabled (Not Scored)
+# 3.5.3 - Ensure iptables is installed (Scored)
 
-modprobe -n -v rds | grep -E "(install /bin/true|FATAL: Module rds not found.)" || exit $?
+rpm -q iptables |grep -E "iptables-" || exit $?

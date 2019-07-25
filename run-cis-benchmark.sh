@@ -185,24 +185,26 @@ test_wrapper 3.2.5 "Ensure broadcast ICMP requests are ignored (Scored)" Yes Ser
 test_wrapper 3.2.6 "Ensure bogus ICMP responses are ignored (Scored)" Yes Server1 Workstation1
 test_wrapper 3.2.7 "Ensure Reverse Path Filtering is enabled (Scored)" Yes Server1 Workstation1
 test_wrapper 3.2.8 "Ensure TCP SYN Cookies is enabled (Scored)" Yes Server1 Workstation1
-test_wrapper 3.3.1 "Ensure IPv6 router advertisements are not accepted (Not Scored)" No Server1 Workstation1
-test_wrapper 3.3.2 "Ensure IPv6 redirects are not accepted (Not Scored)" No Server1 Workstation1
-test_wrapper 3.3.3 "Ensure IPv6 is disabled (Not Scored)" No Server1 Workstation1
-test_wrapper 3.4.1 "Ensure TCP Wrappers is installed (Scored)" Yes Server1 Workstation1
-test_wrapper 3.4.2 "Ensure /etc/hosts.allow is configured (Scored)" Yes Server1 Workstation1
-test_wrapper 3.4.3 "Ensure /etc/hosts.deny is configured (Scored)" Yes Server1 Workstation1
-test_wrapper 3.4.4 "Ensure permissions on /etc/hosts.allow are configured (Scored)" Yes Server1 Workstation1
-test_wrapper 3.4.5 "Ensure permissions on /etc/hosts.deny are configured (Scored)" Yes Server1 Workstation1
-test_wrapper 3.5.1 "Ensure DCCP is disabled (Not Scored)" No Server1 Workstation1
-test_wrapper 3.5.2 "Ensure SCTP is disabled (Not Scored)" No Server1 Workstation1
-test_wrapper 3.5.3 "Ensure RDS is disabled (Not Scored)" No Server1 Workstation1
-test_wrapper 3.5.4 "Ensure TIPC is disabled (Not Scored)" No Server1 Workstation1
-test_wrapper 3.6.1 "Ensure iptables is installed (Scored)" Yes Server1 Workstation1
-test_wrapper 3.6.2 "Ensure default deny firewall policy (Scored)" Yes Server1 Workstation1
-test_wrapper 3.6.3 "Ensure loopback traffic is configured (Scored)" Yes Server1 Workstation1
-test_wrapper 3.6.4 "Ensure outbound and established connections are configured (Not Scored)" No Server1 Workstation1
-test_wrapper 3.6.5 "Ensure firewall rules exist for all open ports (Scored)" Yes Server1 Workstation1
-test_wrapper 3.7 "Ensure wireless interfaces are disabled (Not Scored)" No Server1 Workstation2
+test_wrapper 3.2.9 "Ensure IPv6 router advertisements are not accepted (Not Scored)" No Server1 Workstation1
+test_wrapper 3.3.1 "Ensure TCP Wrappers is installed (Scored)" Yes Server1 Workstation1
+test_wrapper 3.3.2 "Ensure /etc/hosts.allow is configured (Scored)" Yes Server1 Workstation1
+test_wrapper 3.3.3 "Ensure /etc/hosts.deny is configured (Scored)" Yes Server1 Workstation1
+test_wrapper 3.3.4 "Ensure permissions on /etc/hosts.allow are configured (Scored)" Yes Server1 Workstation1
+test_wrapper 3.3.5 "Ensure permissions on /etc/hosts.deny are configured (Scored)" Yes Server1 Workstation1
+test_wrapper 3.4.1 "Ensure DCCP is disabled (Not Scored)" No Server1 Workstation1
+test_wrapper 3.4.2 "Ensure SCTP is disabled (Not Scored)" No Server1 Workstation1
+test_wrapper 3.4.3 "Ensure RDS is disabled (Not Scored)" No Server1 Workstation1
+test_wrapper 3.4.4 "Ensure TIPC is disabled (Not Scored)" No Server1 Workstation1
+test_wrapper 3.5.1.1 "Ensure default deny firewall policy (Scored)" Yes Server1 Workstation1
+test_wrapper 3.5.1.2 "Ensure loopback traffic is configured (Scored)" Yes Server1 Workstation1
+test_wrapper 3.5.1.3 "Ensure outbound and established connections are configured (Not Scored)" No Server1 Workstation1
+test_wrapper 3.5.1.4 "Ensure firewall rules exist for all open ports (Scored)" Yes Server1 Workstation1
+test_wrapper 3.5.2.1 "Ensure IPv6 default deny firewall policy (Scored)" Yes Server1 Workstation1
+test_wrapper 3.5.2.2 "Ensure IPv6 loopback traffic is configured (Scored)" Yes Server1 Workstation1
+test_wrapper 3.5.2.3 "Ensure IPv6 outbound and established connections are configured (Not Scored)" No Server1 Workstation1
+test_wrapper 3.5.2.4 "Ensure IPv6 firewall rules exist for all open ports (Scored)" Yes Server1 Workstation1
+test_wrapper 3.5.3 "Ensure iptables is installed (Scored)" Yes Server1 Workstation1
+test_wrapper 3.6 "Ensure IPv6 is disabled (Not Scored)" No Server1 Workstation1
 test_wrapper 4.1.1.1 "Ensure audit log storage size is configured (Not Scored)" No Server2 Workstation2
 test_wrapper 4.1.1.2 "Ensure system is disabled when audit logs are full (Scored)" Yes Server2 Workstation2
 test_wrapper 4.1.1.3 "Ensure audit logs are not automatically deleted (Scored)" Yes Server2 Workstation2

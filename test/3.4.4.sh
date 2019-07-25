@@ -1,6 +1,6 @@
 #!/bin/sh
 # ** AUTO GENERATED **
 
-# 3.4.4 - Ensure permissions on /etc/hosts.allow are configured (Scored)
+# 3.4.4 - Ensure TIPC is disabled (Not Scored)
 
-stat -L -c "%a %u %g" /etc/hosts.allow | grep -q "644 0 0$" || exit $?
+modprobe -n -v tipc | grep -E "(install /bin/true|FATAL: Module tipc not found.)" || exit $?

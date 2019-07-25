@@ -1,6 +1,8 @@
 #!/bin/sh
 # ** AUTO GENERATED **
 
-# 3.3.3 - Ensure IPv6 is disabled (Not Scored)
+# 3.3.3 - Ensure /etc/hosts.deny is configured (Scored)
 
-grep "^\s*linux" /boot/grub2/grub.cfg | grep -E "ipv6.disable\s*=\s*1" || exit $?
+# This is a fairly restrictive check - with this in place, you could lock yourself out if you don't have a proper /etc/hosts.allow setup.  Treat this carefully!
+
+cut -d\# -f1 /etc/hosts.deny | grep -q "ALL[[:space:]]*:[[:space:]]*ALL" || exit $?
