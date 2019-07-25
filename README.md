@@ -1,5 +1,5 @@
-# centos-cis-benchmark
-Based on CIS CentOS Linux 7 Benchmark
+# amazon-cis-benchmark
+Based on CIS CentOS Linux 7 Benchmark at https://github.com/massyn/centos-cis-benchmark
 v2.2.0 - 12-27-2017
 
 ## How to run the audit
