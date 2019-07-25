@@ -120,22 +120,18 @@ test_wrapper 1.1.14 "Ensure nodev option set on /home partition (Scored)" Yes Se
 test_wrapper 1.1.15 "Ensure nodev option set on /dev/shm partition (Scored)" Yes Server1 Workstation1
 test_wrapper 1.1.16 "Ensure nosuid option set on /dev/shm partition (Scored)" Yes Server1 Workstation1
 test_wrapper 1.1.17 "Ensure noexec option set on /dev/shm partition (Scored)" Yes Server1 Workstation1
-test_wrapper 1.1.18 "Ensure nodev option set on removable media partitions (Not Scored)" No Server1 Workstation1
-test_wrapper 1.1.19 "Ensure nosuid option set on removable media partitions (Not Scored)" No Server1 Workstation1
-test_wrapper 1.1.21 "Ensure sticky bit is set on all world-writable directories (Scored)" Yes Server1 Workstation1
-test_wrapper 1.1.22 "Disable Automounting (Scored)" Yes Server1 Workstation2
+test_wrapper 1.1.18 "Ensure sticky bit is set on all world-writable directories (Scored)" No Server1 Workstation1
+test_wrapper 1.1.19 "Disable Automounting (Scored)" No Server1 Workstation1
 test_wrapper 1.2.1 "Ensure package manager repositories are configured (Not Scored)" No Server1 Workstation1
 test_wrapper 1.2.2 "Ensure GPG keys are configured (Not Scored)" No Server1 Workstation1
 test_wrapper 1.2.3 "Ensure gpgcheck is globally activated (Scored)" Yes Server1 Workstation1
 test_wrapper 1.3.1 "Ensure AIDE is installed (Scored)" Yes Server1 Workstation1
 test_wrapper 1.3.2 "Ensure filesystem integrity is regularly checked (Scored)" Yes Server1 Workstation1
 test_wrapper 1.4.1 "Ensure permissions on bootloader config are configured (Scored)" Yes Server1 Workstation1
-test_wrapper 1.4.2 "Ensure bootloader password is set (Scored)" Yes Server1 Workstation1
-test_wrapper 1.4.3 "Ensure authentication required for single user mode (Scored)" Yes Server1 Workstation1
+test_wrapper 1.4.2 "Ensure authentication required for single user mode (Scored)" Yes Server1 Workstation1
 test_wrapper 1.5.1 "Ensure core dumps are restricted (Scored)" Yes Server1 Workstation1
-test_wrapper 1.5.2 "Ensure XD/NX support is enabled (Not Scored)" No Server1 Workstation1
-test_wrapper 1.5.3 "Ensure address space layout randomization (ASLR) is enabled (Scored)" Yes Server1 Workstation1
-test_wrapper 1.5.4 "Ensure prelink is disabled (Scored)" Yes Server1 Workstation1
+test_wrapper 1.5.2 "Ensure address space layout randomization (ASLR) is enabled (Scored)" No Server1 Workstation1
+test_wrapper 1.5.3 "Ensure prelink is disabled (Scored)" Yes Server1 Workstation1
 test_wrapper 1.6.1.1 "Ensure SELinux is not disabled in bootloader configuration (Scored)" Yes Server2 Workstation2
 test_wrapper 1.6.1.2 "Ensure the SELinux state is enforcing (Scored)" Yes Server2 Workstation2
 test_wrapper 1.6.1.3 "Ensure SELinux policy is configured (Scored)" Yes Server2 Workstation2
@@ -151,41 +147,34 @@ test_wrapper 1.7.1.5 "Ensure permissions on /etc/issue are configured (Scored)" 
 test_wrapper 1.7.1.6 "Ensure permissions on /etc/issue.net are configured (Not Scored)" No Server1 Workstation1
 test_wrapper 1.7.2 "Ensure GDM login banner is configured (Scored)" Yes Server1 Workstation1
 test_wrapper 1.8 "Ensure updates, patches, and additional security software are installed (Scored)" Yes Server1 Workstation1
-test_wrapper 2.1.1 "Ensure chargen services are not enabled (Scored)" Yes Server1 Workstation1
-test_wrapper 2.1.2 "Ensure daytime services are not enabled (Scored)" Yes Server1 Workstation1
-test_wrapper 2.1.3 "Ensure discard services are not enabled (Scored)" Yes Server1 Workstation1
-test_wrapper 2.1.4 "Ensure echo services are not enabled (Scored)" Yes Server1 Workstation1
-test_wrapper 2.1.5 "Ensure time services are not enabled (Scored)" Yes Server1 Workstation1
-test_wrapper 2.1.6 "Ensure tftp server is not enabled (Scored)" Yes Server1 Workstation1
-test_wrapper 2.1.7 "Ensure xinetd is not enabled (Scored)" Yes Server1 Workstation1
-test_wrapper 2.2.1.1 "Ensure time synchronization is in use (Not Scored)" No Server1 Workstation1
-test_wrapper 2.2.1.2 "Ensure ntp is configured (Scored)" Yes Server1 Workstation1
-test_wrapper 2.2.1.3 "Ensure chrony is configured (Scored)" Yes Server1 Workstation1
-test_wrapper 2.2.2 "Ensure X Window System is not installed (Scored)" Yes Server1 Workstation2
-test_wrapper 2.2.3 "Ensure Avahi Server is not enabled (Scored)" Yes Server1 Workstation1
-test_wrapper 2.2.4 "Ensure CUPS is not enabled (Scored)" Yes Server1 Workstation2
-test_wrapper 2.2.5 "Ensure DHCP Server is not enabled (Scored)" Yes Server1 Workstation1
-test_wrapper 2.2.6 "Ensure LDAP server is not enabled (Scored)" Yes Server1 Workstation1
-test_wrapper 2.2.7 "Ensure NFS and RPC are not enabled (Scored)" Yes Server1 Workstation1
-test_wrapper 2.2.8 "Ensure DNS Server is not enabled (Scored)" Yes Server1 Workstation1
-test_wrapper 2.2.9 "Ensure FTP Server is not enabled (Scored)" Yes Server1 Workstation1
-test_wrapper 2.2.10 "Ensure HTTP server is not enabled (Scored)" Yes Server1 Workstation1
-test_wrapper 2.2.11 "Ensure IMAP and POP3 server is not enabled (Scored)" Yes Server1 Workstation1
-test_wrapper 2.2.12 "Ensure Samba is not enabled (Scored)" Yes Server1 Workstation1
-test_wrapper 2.2.13 "Ensure HTTP Proxy Server is not enabled (Scored)" Yes Server1 Workstation1
-test_wrapper 2.2.14 "Ensure SNMP Server is not enabled (Scored)" Yes Server1 Workstation1
-test_wrapper 2.2.15 "Ensure mail transfer agent is configured for local-only mode (Scored)" Yes Server1 Workstation1
-test_wrapper 2.2.16 "Ensure NIS Server is not enabled (Scored)" Yes Server1 Workstation1
-test_wrapper 2.2.17 "Ensure rsh server is not enabled (Scored)" Yes Server1 Workstation1
-test_wrapper 2.2.18 "Ensure telnet server is not enabled (Scored)" Yes Server1 Workstation1
-test_wrapper 2.2.19 "Ensure tftp server is not enabled (Scored)" Yes Server1 Workstation1
-test_wrapper 2.2.20 "Ensure rsync service is not enabled (Scored)" Yes Server1 Workstation1
-test_wrapper 2.2.21 "Ensure talk server is not enabled (Scored)" Yes Server1 Workstation1
-test_wrapper 2.3.1 "Ensure NIS Client is not installed (Scored)" Yes Server1 Workstation1
-test_wrapper 2.3.2 "Ensure rsh client is not installed (Scored)" Yes Server1 Workstation1
-test_wrapper 2.3.3 "Ensure talk client is not installed (Scored)" Yes Server1 Workstation1
-test_wrapper 2.3.4 "Ensure telnet client is not installed (Scored)" Yes Server1 Workstation1
-test_wrapper 2.3.5 "Ensure LDAP client is not installed (Scored)" Yes Server1 Workstation1
+test_wrapper 2.1.1.1 "Ensure time synchronization is in use (Not Scored)" Yes Server1 Workstation1
+test_wrapper 2.1.1.2 "Ensure ntp is configured (Scored)" Yes Server1 Workstation1
+test_wrapper 2.1.1.3 "Ensure chrony is configured (Scored)" Yes Server1 Workstation1
+test_wrapper 2.1.2 "Ensure X Window System is not installed (Scored)" Yes Server1 Workstation1
+test_wrapper 2.1.3 "Ensure Avahi Server is not enabled (Scored)" Yes Server1 Workstation1
+test_wrapper 2.1.4 "Ensure CUPS is not enabled (Scored)" Yes Server1 Workstation2
+test_wrapper 2.1.5 "Ensure DHCP Server is not enabled (Scored)" Yes Server1 Workstation1
+test_wrapper 2.1.6 "Ensure LDAP server is not enabled (Scored)" Yes Server1 Workstation1
+test_wrapper 2.1.7 "Ensure NFS and RPC are not enabled (Scored)" Yes Server1 Workstation1
+test_wrapper 2.1.8 "Ensure DNS Server is not enabled (Scored)" Yes Server1 Workstation1
+test_wrapper 2.1.9 "Ensure FTP Server is not enabled (Scored)" Yes Server1 Workstation1
+test_wrapper 2.1.10 "Ensure HTTP server is not enabled (Scored)" Yes Server1 Workstation1
+test_wrapper 2.1.11 "Ensure IMAP and POP3 server is not enabled (Scored)" Yes Server1 Workstation1
+test_wrapper 2.1.12 "Ensure Samba is not enabled (Scored)" Yes Server1 Workstation1
+test_wrapper 2.1.13 "Ensure HTTP Proxy Server is not enabled (Scored)" Yes Server1 Workstation1
+test_wrapper 2.1.14 "Ensure SNMP Server is not enabled (Scored)" Yes Server1 Workstation1
+test_wrapper 2.1.15 "Ensure mail transfer agent is configured for local-only mode (Scored)" Yes Server1 Workstation1
+test_wrapper 2.1.16 "Ensure NIS Server is not enabled (Scored)" Yes Server1 Workstation1
+test_wrapper 2.1.17 "Ensure rsh server is not enabled (Scored)" Yes Server1 Workstation1
+test_wrapper 2.1.18 "Ensure telnet server is not enabled (Scored)" Yes Server1 Workstation1
+test_wrapper 2.1.19 "Ensure tftp server is not enabled (Scored)" Yes Server1 Workstation1
+test_wrapper 2.1.20 "Ensure rsync service is not enabled (Scored)" Yes Server1 Workstation1
+test_wrapper 2.1.21 "Ensure talk server is not enabled (Scored)" Yes Server1 Workstation1
+test_wrapper 2.2.1 "Ensure NIS Client is not installed (Scored)" Yes Server1 Workstation1
+test_wrapper 2.2.2 "Ensure rsh client is not installed (Scored)" Yes Server1 Workstation1
+test_wrapper 2.2.3 "Ensure talk client is not installed (Scored)" Yes Server1 Workstation1
+test_wrapper 2.2.4 "Ensure telnet client is not installed (Scored)" Yes Server1 Workstation1
+test_wrapper 2.2.5 "Ensure LDAP client is not installed (Scored)" Yes Server1 Workstation1
 test_wrapper 3.1.1 "Ensure IP forwarding is disabled (Scored)" Yes Server1 Workstation1
 test_wrapper 3.1.2 "Ensure packet redirect sending is disabled (Scored)" Yes Server1 Workstation1
 test_wrapper 3.2.1 "Ensure source routed packets are not accepted (Scored)" Yes Server1 Workstation1
