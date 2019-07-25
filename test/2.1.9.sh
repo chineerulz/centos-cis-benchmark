@@ -1,8 +1,6 @@
 #!/bin/sh
 # ** AUTO GENERATED **
 
-# 2.1.9 - Ensure tftp server is not enabled (Scored)
+# 2.2.9 - Ensure FTP Server is not enabled (Scored)
 
-out=$(chkconfig --list | grep -E "^(tftp)\s" |grep ":on")
-[[ -z "${out}" ]] || exit 1
-
+systemctl is-enabled vsftpd 2>&1 | grep -E "(disabled|No such file or directory)" || exit $?

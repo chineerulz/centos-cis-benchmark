@@ -1,8 +1,6 @@
 #!/bin/sh
 # ** AUTO GENERATED **
 
-# 2.1.8 - Ensure telnet server is not enabled (Scored)
+# 2.2.8 - Ensure DNS Server is not enabled (Scored)
 
-out=$(chkconfig --list | grep -E "^(telnet)\s" |grep ":on")
-[[ -z "${out}" ]] || exit 1
-
+systemctl is-enabled named 2>&1 | grep -E "(disabled|No such file or directory)" || exit $?

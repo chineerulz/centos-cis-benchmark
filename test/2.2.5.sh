@@ -1,6 +1,6 @@
 #!/bin/sh
 # ** AUTO GENERATED **
 
-# 2.2.5 - Ensure DHCP Server is not enabled (Scored)
+# 2.3.5 - Ensure LDAP client is not installed (Scored)
 
-systemctl is-enabled dhcpd 2>&1 | grep -E "(disabled|No such file or directory)" || exit $?
+rpm -q openldap-clients | grep -E "package openldap-clients is not installed" || exit $1

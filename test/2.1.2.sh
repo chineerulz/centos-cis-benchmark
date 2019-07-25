@@ -1,8 +1,7 @@
 #!/bin/sh
 # ** AUTO GENERATED **
 
-# 2.1.2 - Ensure daytime services are not enabled (Scored)
+# 2.1.2 - Ensure X Window System is not installed (Scored)
 
-out=$(chkconfig --list | grep -E "^(daytime-dgram|daytime-stream)\s" |grep ":on")
+out=$(rpm -qa xorg-x11*)
 [[ -z "${out}" ]] || exit 1
-

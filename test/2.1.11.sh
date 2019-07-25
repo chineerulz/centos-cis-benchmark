@@ -1,8 +1,6 @@
 #!/bin/sh
 # ** AUTO GENERATED **
 
-# 2.1.11 - Ensure xinetd is not enabled (Scored)
+# 2.2.11 - Ensure IMAP and POP3 server is not enabled (Scored)
 
-out=$(chkconfig --list | grep -E "^(xinetd)\s" |grep ":on")
-[[ -z "${out}" ]] || exit 1
-
+systemctl is-enabled dovecot 2>&1 | grep -E "(disabled|No such file or directory)" || exit $?

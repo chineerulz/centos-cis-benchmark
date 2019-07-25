@@ -1,8 +1,6 @@
 #!/bin/sh
 # ** AUTO GENERATED **
 
-# 2.1.4 - Ensure echo services are not enabled (Scored)
+# 2.1.4 - Ensure CUPS is not enabled (Scored)
 
-out=$(chkconfig --list | grep -E "^(echo-dgram|echo-stream)\s" |grep ":on")
-[[ -z "${out}" ]] || exit 1
-
+systemctl is-enabled cups 2>&1 | grep -E "(disabled|No such file or directory)" || exit $?

@@ -1,6 +1,6 @@
 #!/bin/sh
 # ** AUTO GENERATED **
 
-# 2.2.4 - Ensure CUPS is not enabled (Scored)
+# 2.3.4 - Ensure telnet client is not installed (Scored)
 
-systemctl is-enabled cups 2>&1 | grep -E "(disabled|No such file or directory)" || exit $?
+rpm -q telnet | grep -E "package telnet is not installed" || exit $1

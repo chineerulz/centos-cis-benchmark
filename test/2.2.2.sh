@@ -1,7 +1,6 @@
 #!/bin/sh
 # ** AUTO GENERATED **
 
-# 2.2.2 - Ensure X Window System is not installed (Scored)
+# 2.3.2 - Ensure rsh client is not installed (Scored)
 
-out=$(rpm -qa xorg-x11*)
-[[ -z "${out}" ]] || exit 1
+rpm -q rsh | grep -E "package rsh is not installed" || exit $1
