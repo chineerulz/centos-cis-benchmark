@@ -1,6 +1,6 @@
 #!/bin/sh
 # ** AUTO GENERATED **
 
-# 5.2.4 - Ensure SSH X11 forwarding is disabled (Scored)
+# 5.2.4 - Ensure SSH Protocol is set to 2 (Scored)
 
-grep "^\s*X11Forwarding" /etc/ssh/sshd_config | grep -q "X11Forwarding\s*no" || exit $?
+grep "^\s*Protocol" /etc/ssh/sshd_config | grep -q "Protocol\s*2" || exit $?

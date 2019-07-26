@@ -1,10 +1,14 @@
 #!/bin/sh
 # ** AUTO GENERATED **
 
-# 5.2.13 - Ensure SSH LoginGraceTime is set to one minute or less (Scored)
+# 5.2.13 Ensure only strong ciphers are used
 
-LGT=$(grep "^LoginGraceTime" /etc/ssh/sshd_config | awk {'print $2'})
-if [[ $LGT -eq '' || $LGT -gt 60 || $LGT -lt 1 ]]; then
-        echo LoginGraceTime is $LGT
-        exit 1
-fi
+WEAK_LIST="3des-cbc aes128-cbc aes192-cbc aes256-cbc arcfour arcfour128 arcfour256 blowfish-cbc cast128-cbc rijndael-cbc@lysator.liu.se"
+
+LIST_CIPHERS=$(sshd -T | grep -i "ciphers" | awk {'print $2'})
+
+for ciphers in $(echo $LIST_CIPHERS | sed "s/,/ /g")
+do
+echo $WEAK_LIST | grep $ciphers || exit 1
+
+done

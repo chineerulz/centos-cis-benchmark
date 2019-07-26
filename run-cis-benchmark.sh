@@ -247,20 +247,24 @@ test_wrapper 5.1.6 "Ensure permissions on /etc/cron.monthly are configured (Scor
 test_wrapper 5.1.7 "Ensure permissions on /etc/cron.d are configured (Scored)" Yes Server1 Workstation1
 test_wrapper 5.1.8 "Ensure at/cron is restricted to authorized users (Scored)" Yes Server1 Workstation1
 test_wrapper 5.2.1 "Ensure permissions on /etc/ssh/sshd_config are configured (Scored)" Yes Server1 Workstation1
-test_wrapper 5.2.2 "Ensure SSH Protocol is set to 2 (Scored)" Yes Server1 Workstation1
-test_wrapper 5.2.3 "Ensure SSH LogLevel is set to INFO (Scored)" Yes Server1 Workstation1
-test_wrapper 5.2.4 "Ensure SSH X11 forwarding is disabled (Scored)" Yes Server1 Workstation1
-test_wrapper 5.2.5 "Ensure SSH MaxAuthTries is set to 4 or less (Scored)" Yes Server1 Workstation1
-test_wrapper 5.2.6 "Ensure SSH IgnoreRhosts is enabled (Scored)" Yes Server1 Workstation1
-test_wrapper 5.2.7 "Ensure SSH HostbasedAuthentication is disabled (Scored)" Yes Server1 Workstation1
-test_wrapper 5.2.8 "Ensure SSH root login is disabled (Scored)" Yes Server1 Workstation1
-test_wrapper 5.2.9 "Ensure SSH PermitEmptyPasswords is disabled (Scored)" Yes Server1 Workstation1
-test_wrapper 5.2.10 "Ensure SSH PermitUserEnvironment is disabled (Scored)" Yes Server1 Workstation1
-test_wrapper 5.2.11 "Ensure only approved MAC algorithms are used (Scored)" Yes Server1 Workstation1
-test_wrapper 5.2.12 "Ensure SSH Idle Timeout Interval is configured (Scored)" Yes Server1 Workstation1
-test_wrapper 5.2.13 "Ensure SSH LoginGraceTime is set to one minute or less (Scored)" Yes Server1 Workstation1
-test_wrapper 5.2.14 "Ensure SSH access is limited (Scored)" Yes Server1 Workstation1
-test_wrapper 5.2.15 "Ensure SSH warning banner is configured (Scored)" Yes Server1 Workstation1
+test_wrapper 5.2.2 "Ensure permissions on SSH private host key files are configured" Yes Server1 Workstation1
+test_wrapper 5.2.3 "Ensure permissions on SSH public host key files are configured" Yes Server1 Workstation1
+test_wrapper 5.2.4 "Ensure SSH Protocol is set to 2 (Scored)" Yes Server1 Workstation1
+test_wrapper 5.2.5 "Ensure SSH LogLevel is set to INFO (Scored)" Yes Server1 Workstation1
+test_wrapper 5.2.6 "Ensure SSH X11 forwarding is disabled (Scored)" Yes Server1 Workstation1
+test_wrapper 5.2.7 "Ensure SSH MaxAuthTries is set to 4 or less (Scored)" Yes Server1 Workstation1
+test_wrapper 5.2.8 "Ensure SSH IgnoreRhosts is enabled (Scored)" Yes Server1 Workstation1
+test_wrapper 5.2.9 "Ensure SSH HostbasedAuthentication is disabled (Scored)" Yes Server1 Workstation1
+test_wrapper 5.2.10 "Ensure SSH root login is disabled (Scored)" Yes Server1 Workstation1
+test_wrapper 5.2.11 "Ensure SSH PermitEmptyPasswords is disabled (Scored)" Yes Server1 Workstation1
+test_wrapper 5.2.12 "Ensure SSH PermitUserEnvironment is disabled (Scored)" Yes Server1 Workstation1
+test_wrapper 5.2.13 "Ensure only strong ciphers are used" Yes Server1 Workstation1
+test_wrapper 5.2.14 "Ensure only approved MAC algorithms are used" Yes Server1 Workstation1
+test_wrapper 5.2.15 "Ensure that strong Key Exchange algorithms are used" Yes Server1 Workstation1
+test_wrapper 5.2.16 "Ensure SSH Idle Timeout Interval is configured (Scored)" Yes Server1 Workstation1
+test_wrapper 5.2.17 "Ensure SSH LoginGraceTime is set to one minute or less (Scored)" Yes Server1 Workstation1
+test_wrapper 5.2.18 "Ensure SSH access is limited (Scored)" Yes Server1 Workstation1
+test_wrapper 5.2.19 "Ensure SSH warning banner is configured (Scored)" Yes Server1 Workstation1
 test_wrapper 5.3.1 "Ensure password creation requirements are configured (Scored)" Yes Server1 Workstation1
 test_wrapper 5.3.2 "Ensure lockout for failed password attempts is configured (Scored)" Yes Server1 Workstation1
 test_wrapper 5.3.3 "Ensure password reuse is limited (Scored)" Yes Server1 Workstation1
