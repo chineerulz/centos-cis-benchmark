@@ -216,11 +216,11 @@ test_wrapper 4.1.6 "Ensure events that modify the system's network environment a
 test_wrapper 4.1.7 "Ensure events that modify the system's Mandatory Access Controls are collected (Scored)" Yes Server2 Workstation2
 #test_wrapper 4.1.8 "Ensure login and logout events are collected (Scored)" Yes Server2 Workstation2
 test_wrapper 4.1.9 "Ensure session initiation information is collected (Scored)" Yes Server2 Workstation2
-test_wrapper 4.1.10 "Ensure discretionary access control permission modification events are collected (Scored)" Yes Server2 Workstation2
-test_wrapper 4.1.11 "Ensure unsuccessful unauthorized file access attempts are collected (Scored)" Yes Server2 Workstation2
+#test_wrapper 4.1.10 "Ensure discretionary access control permission modification events are collected (Scored)" Yes Server2 Workstation2
+#test_wrapper 4.1.11 "Ensure unsuccessful unauthorized file access attempts are collected (Scored)" Yes Server2 Workstation2
 #test_wrapper 4.1.12 "Ensure use of privileged commands is collected (Scored)" Yes Server2 Workstation2
-test_wrapper 4.1.13 "Ensure successful file system mounts are collected (Scored)" Yes Server2 Workstation2
-test_wrapper 4.1.14 "Ensure file deletion events by users are collected (Scored)" Yes Server2 Workstation2
+#test_wrapper 4.1.13 "Ensure successful file system mounts are collected (Scored)" Yes Server2 Workstation2
+#test_wrapper 4.1.14 "Ensure file deletion events by users are collected (Scored)" Yes Server2 Workstation2
 test_wrapper 4.1.15 "Ensure changes to system administration scope (sudoers) is collected (Scored)" Yes Server2 Workstation2
 test_wrapper 4.1.16 "Ensure system administrator actions (sudolog) are collected (Scored)" Yes Server2 Workstation2
 #test_wrapper 4.1.17 "Ensure kernel module loading and unloading is collected (Scored)" Yes Server2 Workstation2
@@ -264,13 +264,13 @@ test_wrapper 5.2.12 "Ensure SSH PermitUserEnvironment is disabled (Scored)" Yes 
 test_wrapper 5.2.16 "Ensure SSH Idle Timeout Interval is configured (Scored)" Yes Server1 Workstation1
 test_wrapper 5.2.17 "Ensure SSH LoginGraceTime is set to one minute or less (Scored)" Yes Server1 Workstation1
 #test_wrapper 5.2.18 "Ensure SSH access is limited (Scored)" Yes Server1 Workstation1
-test_wrapper 5.2.19 "Ensure SSH warning banner is configured (Scored)" Yes Server1 Workstation1
+#test_wrapper 5.2.19 "Ensure SSH warning banner is configured (Scored)" Yes Server1 Workstation1
 #test_wrapper 5.3.1 "Ensure password creation requirements are configured (Scored)" Yes Server1 Workstation1
 #test_wrapper 5.3.2 "Ensure lockout for failed password attempts is configured (Scored)" Yes Server1 Workstation1
 test_wrapper 5.3.3 "Ensure password reuse is limited (Scored)" Yes Server1 Workstation1
 #test_wrapper 5.3.4 "Ensure password hashing algorithm is SHA-512 (Scored)" Yes Server1 Workstation1
 test_wrapper 5.4.1.1 "Ensure password expiration is 365 days or less (Scored)" Yes Server1 Workstation1
-test_wrapper 5.4.1.2 "Ensure minimum days between password changes is 7 or more (Scored)" Yes Server1 Workstation1
+#test_wrapper 5.4.1.2 "Ensure minimum days between password changes is 7 or more (Scored)" Yes Server1 Workstation1
 test_wrapper 5.4.1.3 "Ensure password expiration warning days is 7 or more (Scored)" Yes Server1 Workstation1
 test_wrapper 5.4.1.4 "Ensure inactive password lock is 30 days or less (Scored)" Yes Server1 Workstation1
 test_wrapper 5.4.1.5 "Ensure all users last password change date is in the past (Scored)" Yes Server1 Workstation1
