@@ -180,15 +180,15 @@ test_wrapper 2.2.5 "Ensure LDAP client is not installed (Scored)" Yes Server1 Wo
 test_wrapper 3.2.1 "Ensure source routed packets are not accepted (Scored)" Yes Server1 Workstation1
 #test_wrapper 3.2.2 "Ensure ICMP redirects are not accepted (Scored)" Yes Server1 Workstation1
 #test_wrapper 3.2.3 "Ensure secure ICMP redirects are not accepted (Scored)" Yes Server1 Workstation1
-test_wrapper 3.2.4 "Ensure suspicious packets are logged (Scored)" Yes Server1 Workstation1
+#test_wrapper 3.2.4 "Ensure suspicious packets are logged (Scored)" Yes Server1 Workstation1
 test_wrapper 3.2.5 "Ensure broadcast ICMP requests are ignored (Scored)" Yes Server1 Workstation1
 test_wrapper 3.2.6 "Ensure bogus ICMP responses are ignored (Scored)" Yes Server1 Workstation1
 test_wrapper 3.2.7 "Ensure Reverse Path Filtering is enabled (Scored)" Yes Server1 Workstation1
 test_wrapper 3.2.8 "Ensure TCP SYN Cookies is enabled (Scored)" Yes Server1 Workstation1
-test_wrapper 3.2.9 "Ensure IPv6 router advertisements are not accepted (Not Scored)" No Server1 Workstation1
+#test_wrapper 3.2.9 "Ensure IPv6 router advertisements are not accepted (Not Scored)" No Server1 Workstation1
 test_wrapper 3.3.1 "Ensure TCP Wrappers is installed (Scored)" Yes Server1 Workstation1
-test_wrapper 3.3.2 "Ensure /etc/hosts.allow is configured (Scored)" Yes Server1 Workstation1
-test_wrapper 3.3.3 "Ensure /etc/hosts.deny is configured (Scored)" Yes Server1 Workstation1
+#test_wrapper 3.3.2 "Ensure /etc/hosts.allow is configured (Scored)" Yes Server1 Workstation1
+#test_wrapper 3.3.3 "Ensure /etc/hosts.deny is configured (Scored)" Yes Server1 Workstation1
 test_wrapper 3.3.4 "Ensure permissions on /etc/hosts.allow are configured (Scored)" Yes Server1 Workstation1
 test_wrapper 3.3.5 "Ensure permissions on /etc/hosts.deny are configured (Scored)" Yes Server1 Workstation1
 #test_wrapper 3.4.1 "Ensure DCCP is disabled (Not Scored)" No Server1 Workstation1
