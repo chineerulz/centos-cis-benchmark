@@ -91,7 +91,7 @@ if [[ $(whoami) != "root" ]]; then
         exit 1
 fi
 
-echo "CIS CentOS Linux 7 Benchmark (v2.2.0 - 12-27-2017)"
+echo "CIS Amazon Linux 7 Benchmark"
 echo
 echo hostname : `hostname`
 echo time     : `date`

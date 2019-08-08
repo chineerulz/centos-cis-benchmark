@@ -1,12 +1,11 @@
-# centos-cis-benchmark
-Based on CIS CentOS Linux 7 Benchmark
-v2.2.0 - 12-27-2017
+# amazon-linux-2-cis-benchmark
+This audit is based on CIS CentOS Linux 7 Benchmark by massyn at https://github.com/massyn/centos-cis-benchmark
 
 ## How to run the audit
 To run the audit, execute these steps
 
 ```bash
-git clone https://github.com/massyn/centos-cis-benchmark
+git clone git@bitbucket.org:securitiai/devops.git
 cd centos-cis-benchmark
 sudo bash run-cis-benchmark.sh
 ```
@@ -23,3 +22,5 @@ Some remediation scripts are also included, however use them at your own risk.  
 
 ## Acknowledgement
 * https://github.com/haxorof/centos-bench-security
+* https://github.com/massyn/centos-cis-benchmark
+
