@@ -267,7 +267,7 @@ test_wrapper 5.2.17 "Ensure SSH LoginGraceTime is set to one minute or less (Sco
 #test_wrapper 5.2.19 "Ensure SSH warning banner is configured (Scored)" Yes Server1 Workstation1
 #test_wrapper 5.3.1 "Ensure password creation requirements are configured (Scored)" Yes Server1 Workstation1
 #test_wrapper 5.3.2 "Ensure lockout for failed password attempts is configured (Scored)" Yes Server1 Workstation1
-test_wrapper 5.3.3 "Ensure password reuse is limited (Scored)" Yes Server1 Workstation1
+#test_wrapper 5.3.3 "Ensure password reuse is limited (Scored)" Yes Server1 Workstation1
 #test_wrapper 5.3.4 "Ensure password hashing algorithm is SHA-512 (Scored)" Yes Server1 Workstation1
 test_wrapper 5.4.1.1 "Ensure password expiration is 365 days or less (Scored)" Yes Server1 Workstation1
 #test_wrapper 5.4.1.2 "Ensure minimum days between password changes is 7 or more (Scored)" Yes Server1 Workstation1
